@@ -1,0 +1,5 @@
+Os assets do ultimo chefe e do player são pagos, então por favor não redistribuam eles
+nem deixei o repositório do nosso projeto público, por favor. A principio não tem
+problema hospedar ele no site de vocês para jogar.
+
+Sinto muito por não colocar som no jogo, infelizmente final de semestre é fogo.

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="75" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="16" nextobjectid="1">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" name="chao_tileset" tilewidth="32" tileheight="32" tilecount="162" columns="9">
+  <image source="../images/mundo/chao1.png" width="288" height="576"/>
+  <tile id="55">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="163" name="background" tilewidth="32" tileheight="32" tilecount="320" columns="32">
+  <image source="../images/mundo/GandalfHardcore Background layers/Autumn BG/back1.png" width="1024" height="346"/>
+ </tileset>
+ <tileset firstgid="483" name="background2" tilewidth="32" tileheight="32" tilecount="320" columns="32">
+  <image source="../images/mundo/GandalfHardcore Background layers/Autumn BG/back2.png" width="1024" height="346"/>
+ </tileset>
+ <tileset firstgid="803" name="background3" tilewidth="32" tileheight="32" tilecount="320" columns="32">
+  <image source="../images/mundo/GandalfHardcore Background layers/Autumn BG/back3.png" width="1024" height="346"/>
+ </tileset>
+ <tileset firstgid="1123" name="background4" tilewidth="32" tileheight="32" tilecount="320" columns="32">
+  <image source="../images/mundo/GandalfHardcore Background layers/Autumn BG/back4.png" width="1024" height="346"/>
+ </tileset>
+ <tileset firstgid="1443" name="background5" tilewidth="32" tileheight="32" tilecount="320" columns="32">
+  <image source="../images/mundo/GandalfHardcore Background layers/Autumn BG/back5.png" width="1024" height="346"/>
+ </tileset>
+ <tileset firstgid="1763" name="sidescroller" tilewidth="32" tileheight="32" tilecount="208" columns="8">
+  <image source="../images/mundo/dungeon_sidescroller-Raou/Tilesetv3.png" width="272" height="832"/>
+  <tile id="7" probability="2"/>
+  <tile id="15" probability="2"/>
+ </tileset>
+ <tileset firstgid="1971" name="groundTower" tilewidth="32" tileheight="32" tilecount="63" columns="9">
+  <image source="../images/mundo/Pixel2DCastle1.1/ground.png" width="304" height="224"/>
+ </tileset>
+ <tileset firstgid="2034" name="wallsTower" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../images/mundo/Pixel2DCastle1.1/walls.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2290" name="env_objectsTower" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../images/mundo/Pixel2DCastle1.1/env_objects.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2546" name="Decor" tilewidth="32" tileheight="32" tilecount="221" columns="13">
+  <image source="../images/mundo/Decor.png" width="416" height="544"/>
+ </tileset>
+ <tileset firstgid="2767" name="chao" tilewidth="32" tileheight="38" tilecount="157" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="157">
+   <image source="../images/mundo/Tiles/arch_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="158">
+   <image source="../images/mundo/Tiles/arch_2.png" width="32" height="19"/>
+  </tile>
+  <tile id="159">
+   <image source="../images/mundo/Tiles/arch_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="160">
+   <image source="../images/mundo/Tiles/arch_4.png" width="21" height="32"/>
+  </tile>
+  <tile id="161">
+   <image source="../images/mundo/Tiles/arch_5.png" width="21" height="32"/>
+  </tile>
+  <tile id="162">
+   <image source="../images/mundo/Tiles/arch_6.png" width="18" height="32"/>
+  </tile>
+  <tile id="163">
+   <image source="../images/mundo/Tiles/arch_7.png" width="23" height="32"/>
+  </tile>
+  <tile id="164">
+   <image source="../images/mundo/Tiles/blank.png" width="32" height="32"/>
+  </tile>
+  <tile id="165">
+   <image source="../images/mundo/Tiles/brick_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="166">
+   <image source="../images/mundo/Tiles/brick_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="167">
+   <image source="../images/mundo/Tiles/brick_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="168">
+   <image source="../images/mundo/Tiles/brick_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="169">
+   <image source="../images/mundo/Tiles/brick_5.png" width="32" height="32"/>
+  </tile>
+  <tile id="170">
+   <image source="../images/mundo/Tiles/brick_6.png" width="32" height="32"/>
+  </tile>
+  <tile id="171">
+   <image source="../images/mundo/Tiles/brick_7.png" width="32" height="32"/>
+  </tile>
+  <tile id="172">
+   <image source="../images/mundo/Tiles/brick_8.png" width="32" height="32"/>
+  </tile>
+  <tile id="173">
+   <image source="../images/mundo/Tiles/brick_9.png" width="32" height="32"/>
+  </tile>
+  <tile id="174">
+   <image source="../images/mundo/Tiles/brick_10.png" width="32" height="32"/>
+  </tile>
+  <tile id="175">
+   <image source="../images/mundo/Tiles/brick_11.png" width="32" height="32"/>
+  </tile>
+  <tile id="176">
+   <image source="../images/mundo/Tiles/brick_12.png" width="32" height="32"/>
+  </tile>
+  <tile id="177">
+   <image source="../images/mundo/Tiles/brick_13.png" width="32" height="32"/>
+  </tile>
+  <tile id="178">
+   <image source="../images/mundo/Tiles/brick_14.png" width="32" height="32"/>
+  </tile>
+  <tile id="179">
+   <image source="../images/mundo/Tiles/brick_15.png" width="32" height="32"/>
+  </tile>
+  <tile id="180">
+   <image source="../images/mundo/Tiles/brick_16.png" width="32" height="32"/>
+  </tile>
+  <tile id="181">
+   <image source="../images/mundo/Tiles/brick_side_left_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="182">
+   <image source="../images/mundo/Tiles/brick_side_left_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="183">
+   <image source="../images/mundo/Tiles/brick_side_right_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="184">
+   <image source="../images/mundo/Tiles/brick_side_right_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="185">
+   <image source="../images/mundo/Tiles/ceiling_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="186">
+   <image source="../images/mundo/Tiles/ceiling_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="187">
+   <image source="../images/mundo/Tiles/ceiling_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="188">
+   <image source="../images/mundo/Tiles/ceiling_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="189">
+   <image source="../images/mundo/Tiles/ceiling_corner_left.png" width="32" height="32"/>
+  </tile>
+  <tile id="190">
+   <image source="../images/mundo/Tiles/ceiling_corner_right.png" width="32" height="32"/>
+  </tile>
+  <tile id="191">
+   <image source="../images/mundo/Tiles/ceiling_transparent_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="192">
+   <image source="../images/mundo/Tiles/ceiling_transparent_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="193">
+   <image source="../images/mundo/Tiles/column_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="194">
+   <image source="../images/mundo/Tiles/column_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="195">
+   <image source="../images/mundo/Tiles/column_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="196">
+   <image source="../images/mundo/Tiles/column_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="197">
+   <image source="../images/mundo/Tiles/column_5.png" width="32" height="32"/>
+  </tile>
+  <tile id="198">
+   <image source="../images/mundo/Tiles/column_6.png" width="32" height="32"/>
+  </tile>
+  <tile id="199">
+   <image source="../images/mundo/Tiles/column_7.png" width="32" height="32"/>
+  </tile>
+  <tile id="200">
+   <image source="../images/mundo/Tiles/column_8.png" width="32" height="32"/>
+  </tile>
+  <tile id="201">
+   <image source="../images/mundo/Tiles/damaged_brick_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="202">
+   <image source="../images/mundo/Tiles/damaged_brick_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="203">
+   <image source="../images/mundo/Tiles/damaged_brick_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="204">
+   <image source="../images/mundo/Tiles/damaged_brick_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="205">
+   <image source="../images/mundo/Tiles/floor_tile_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="206">
+   <image source="../images/mundo/Tiles/floor_tile_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="207">
+   <image source="../images/mundo/Tiles/floor_tile_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="208">
+   <image source="../images/mundo/Tiles/floor_tile_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="209">
+   <image source="../images/mundo/Tiles/floor_tile_carpet_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="210">
+   <image source="../images/mundo/Tiles/floor_tile_carpet_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="211">
+   <image source="../images/mundo/Tiles/floor_tile_carpet_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="212">
+   <image source="../images/mundo/Tiles/floor_tile_carpet_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="213">
+   <image source="../images/mundo/Tiles/floor_tile_carpet_corner_left.png" width="32" height="32"/>
+  </tile>
+  <tile id="214">
+   <image source="../images/mundo/Tiles/floor_tile_carpet_corner_right.png" width="32" height="32"/>
+  </tile>
+  <tile id="215">
+   <image source="../images/mundo/Tiles/floor_tile_carpet_transition_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="216">
+   <image source="../images/mundo/Tiles/floor_tile_carpet_transition_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="217">
+   <image source="../images/mundo/Tiles/floor_tile_corner_left.png" width="32" height="32"/>
+  </tile>
+  <tile id="218">
+   <image source="../images/mundo/Tiles/floor_tile_corner_right.png" width="32" height="32"/>
+  </tile>
+  <tile id="219">
+   <image source="../images/mundo/Tiles/floor_tile_wood_carpet_transition_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="220">
+   <image source="../images/mundo/Tiles/floor_tile_wood_carpet_transition_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="221">
+   <image source="../images/mundo/Tiles/floor_tile_wood_transition_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="222">
+   <image source="../images/mundo/Tiles/floor_tile_wood_transition_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="223">
+   <image source="../images/mundo/Tiles/floor_wood_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="224">
+   <image source="../images/mundo/Tiles/floor_wood_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="225">
+   <image source="../images/mundo/Tiles/floor_wood_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="226">
+   <image source="../images/mundo/Tiles/floor_wood_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="227">
+   <image source="../images/mundo/Tiles/floor_wood_carpet_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="228">
+   <image source="../images/mundo/Tiles/floor_wood_carpet_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="229">
+   <image source="../images/mundo/Tiles/floor_wood_carpet_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="230">
+   <image source="../images/mundo/Tiles/floor_wood_carpet_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="231">
+   <image source="../images/mundo/Tiles/floor_wood_carpet_corner_left.png" width="32" height="32"/>
+  </tile>
+  <tile id="232">
+   <image source="../images/mundo/Tiles/floor_wood_carpet_corner_right.png" width="32" height="32"/>
+  </tile>
+  <tile id="233">
+   <image source="../images/mundo/Tiles/floor_wood_carpet_transition_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="234">
+   <image source="../images/mundo/Tiles/floor_wood_carpet_transition_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="235">
+   <image source="../images/mundo/Tiles/floor_wood_corner_left.png" width="32" height="32"/>
+  </tile>
+  <tile id="236">
+   <image source="../images/mundo/Tiles/floor_wood_corner_right.png" width="32" height="32"/>
+  </tile>
+  <tile id="237">
+   <image source="../images/mundo/Tiles/lion_column_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="238">
+   <image source="../images/mundo/Tiles/lion_column_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="239">
+   <image source="../images/mundo/Tiles/lion_column_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="240">
+   <image source="../images/mundo/Tiles/lion_column_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="241">
+   <image source="../images/mundo/Tiles/lion_column_5.png" width="32" height="32"/>
+  </tile>
+  <tile id="242">
+   <image source="../images/mundo/Tiles/lion_column_6.png" width="32" height="32"/>
+  </tile>
+  <tile id="243">
+   <image source="../images/mundo/Tiles/lion_column_7.png" width="32" height="32"/>
+  </tile>
+  <tile id="244">
+   <image source="../images/mundo/Tiles/lion_column_8.png" width="32" height="32"/>
+  </tile>
+  <tile id="245">
+   <image source="../images/mundo/Tiles/lion_column_9.png" width="32" height="32"/>
+  </tile>
+  <tile id="246">
+   <image source="../images/mundo/Tiles/lion_column_10.png" width="32" height="32"/>
+  </tile>
+  <tile id="247">
+   <image source="../images/mundo/Tiles/lion_column_11.png" width="32" height="32"/>
+  </tile>
+  <tile id="248">
+   <image source="../images/mundo/Tiles/lion_column_12.png" width="32" height="32"/>
+  </tile>
+  <tile id="249">
+   <image source="../images/mundo/Tiles/merlons_1.png" width="32" height="13"/>
+  </tile>
+  <tile id="250">
+   <image source="../images/mundo/Tiles/merlons_2.png" width="32" height="13"/>
+  </tile>
+  <tile id="251">
+   <image source="../images/mundo/Tiles/merlons_3.png" width="32" height="13"/>
+  </tile>
+  <tile id="252">
+   <image source="../images/mundo/Tiles/merlons_4.png" width="32" height="13"/>
+  </tile>
+  <tile id="253">
+   <image source="../images/mundo/Tiles/merlons_5.png" width="32" height="13"/>
+  </tile>
+  <tile id="254">
+   <image source="../images/mundo/Tiles/platform_1.png" width="32" height="16"/>
+  </tile>
+  <tile id="255">
+   <image source="../images/mundo/Tiles/platform_2.png" width="32" height="16"/>
+  </tile>
+  <tile id="256">
+   <image source="../images/mundo/Tiles/platform_3.png" width="32" height="16"/>
+  </tile>
+  <tile id="257">
+   <image source="../images/mundo/Tiles/platform_4.png" width="32" height="16"/>
+  </tile>
+  <tile id="258">
+   <image source="../images/mundo/Tiles/platform_shadow.png" width="32" height="6"/>
+  </tile>
+  <tile id="259">
+   <image source="../images/mundo/Tiles/platform_wall_connection_left.png" width="16" height="16"/>
+  </tile>
+  <tile id="260">
+   <image source="../images/mundo/Tiles/platform_wall_connection_right.png" width="16" height="16"/>
+  </tile>
+  <tile id="261">
+   <image source="../images/mundo/Tiles/spikes.png" width="32" height="38"/>
+  </tile>
+  <tile id="262">
+   <image source="../images/mundo/Tiles/stairs_tile_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="263">
+   <image source="../images/mundo/Tiles/stairs_tile_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="264">
+   <image source="../images/mundo/Tiles/stairs_tile_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="265">
+   <image source="../images/mundo/Tiles/stairs_tile_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="266">
+   <image source="../images/mundo/Tiles/stairs_tile_carpet_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="267">
+   <image source="../images/mundo/Tiles/stairs_tile_carpet_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="268">
+   <image source="../images/mundo/Tiles/stairs_tile_carpet_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="269">
+   <image source="../images/mundo/Tiles/stairs_tile_carpet_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="270">
+   <image source="../images/mundo/Tiles/stairs_wood_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="271">
+   <image source="../images/mundo/Tiles/stairs_wood_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="272">
+   <image source="../images/mundo/Tiles/stairs_wood_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="273">
+   <image source="../images/mundo/Tiles/stairs_wood_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="274">
+   <image source="../images/mundo/Tiles/stairs_wood_carpet_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="275">
+   <image source="../images/mundo/Tiles/stairs_wood_carpet_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="276">
+   <image source="../images/mundo/Tiles/stairs_wood_carpet_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="277">
+   <image source="../images/mundo/Tiles/stairs_wood_carpet_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="278">
+   <image source="../images/mundo/Tiles/tile_side_left.png" width="32" height="32"/>
+  </tile>
+  <tile id="279">
+   <image source="../images/mundo/Tiles/tile_side_right.png" width="32" height="32"/>
+  </tile>
+  <tile id="280">
+   <image source="../images/mundo/Tiles/wall_1.png" width="21" height="17"/>
+  </tile>
+  <tile id="281">
+   <image source="../images/mundo/Tiles/wall_2.png" width="32" height="17"/>
+  </tile>
+  <tile id="282">
+   <image source="../images/mundo/Tiles/wall_3.png" width="32" height="22"/>
+  </tile>
+  <tile id="283">
+   <image source="../images/mundo/Tiles/wall_4.png" width="32" height="17"/>
+  </tile>
+  <tile id="284">
+   <image source="../images/mundo/Tiles/wall_5.png" width="15" height="17"/>
+  </tile>
+  <tile id="285">
+   <image source="../images/mundo/Tiles/wall_6.png" width="22" height="32"/>
+  </tile>
+  <tile id="286">
+   <image source="../images/mundo/Tiles/wall_7.png" width="24" height="32"/>
+  </tile>
+  <tile id="287">
+   <image source="../images/mundo/Tiles/wall_8.png" width="32" height="32"/>
+  </tile>
+  <tile id="288">
+   <image source="../images/mundo/Tiles/wall_9.png" width="16" height="32"/>
+  </tile>
+  <tile id="289">
+   <image source="../images/mundo/Tiles/wall_10.png" width="15" height="32"/>
+  </tile>
+  <tile id="290">
+   <image source="../images/mundo/Tiles/wall_11.png" width="21" height="32"/>
+  </tile>
+  <tile id="291">
+   <image source="../images/mundo/Tiles/wall_12.png" width="32" height="11"/>
+  </tile>
+  <tile id="292">
+   <image source="../images/mundo/Tiles/wall_13.png" width="32" height="15"/>
+  </tile>
+  <tile id="293">
+   <image source="../images/mundo/Tiles/wall_14.png" width="32" height="11"/>
+  </tile>
+  <tile id="294">
+   <image source="../images/mundo/Tiles/wall_15.png" width="32" height="32"/>
+  </tile>
+  <tile id="295">
+   <image source="../images/mundo/Tiles/wall_16.png" width="32" height="32"/>
+  </tile>
+  <tile id="296">
+   <image source="../images/mundo/Tiles/wall_17.png" width="32" height="32"/>
+  </tile>
+  <tile id="297">
+   <image source="../images/mundo/Tiles/wall_18.png" width="32" height="32"/>
+  </tile>
+  <tile id="298">
+   <image source="../images/mundo/Tiles/window_big_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="299">
+   <image source="../images/mundo/Tiles/window_big_2.png" width="29" height="32"/>
+  </tile>
+  <tile id="300">
+   <image source="../images/mundo/Tiles/window_big_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="301">
+   <image source="../images/mundo/Tiles/window_big_4.png" width="32" height="32"/>
+  </tile>
+  <tile id="302">
+   <image source="../images/mundo/Tiles/window_big_5.png" width="30" height="32"/>
+  </tile>
+  <tile id="303">
+   <image source="../images/mundo/Tiles/window_big_6.png" width="32" height="32"/>
+  </tile>
+  <tile id="304">
+   <image source="../images/mundo/Tiles/window_glass_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="305">
+   <image source="../images/mundo/Tiles/window_glass_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="306">
+   <image source="../images/mundo/Tiles/window_glass_tall_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="307">
+   <image source="../images/mundo/Tiles/window_glass_tall_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="308">
+   <image source="../images/mundo/Tiles/window_glass_tall_3.png" width="32" height="32"/>
+  </tile>
+  <tile id="309">
+   <image source="../images/mundo/Tiles/window_small_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="310">
+   <image source="../images/mundo/Tiles/window_small_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="311">
+   <image source="../images/mundo/Tiles/window_tall_1.png" width="32" height="32"/>
+  </tile>
+  <tile id="312">
+   <image source="../images/mundo/Tiles/window_tall_2.png" width="32" height="32"/>
+  </tile>
+  <tile id="313">
+   <image source="../images/mundo/Tiles/window_tall_3.png" width="32" height="32"/>
+  </tile>
+ </tileset>
+ <group id="9" name="fundo">
+  <layer id="13" name="layer5" width="75" height="19">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <layer id="11" name="layer4" width="75" height="19">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <layer id="12" name="layer3" width="75" height="19">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <layer id="2" name="layer2" width="75" height="19" tintcolor="#676767">
+   <data encoding="csv">
+2935,2935,2935,2935,2935,2935,2935,2932,2932,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2932,2932,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2932,2932,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2932,2932,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2935,2932,2932,2935,2935,2935,2935,2935,2935,
+2932,2933,2933,2968,2932,2932,2933,2932,2932,2932,2932,2969,2969,2932,2932,2932,2933,2933,2968,2932,2932,2933,2932,2932,2932,2932,2969,2969,2932,2932,2932,2933,2933,2968,2932,2932,2933,2932,2932,2932,2932,2969,2969,2932,2932,2932,2933,2933,2968,2932,2932,2933,2932,2932,2932,2932,2969,2969,2932,2932,2932,2933,2933,2968,2932,2932,2933,2932,2932,2932,2932,2969,2969,2932,2932,
+2932,2932,2933,2933,2968,2932,2932,2932,2932,2932,2932,2968,2968,2968,2932,2932,2932,2933,2933,2968,2932,2932,2932,2932,2932,2932,2968,2968,2968,2932,2932,2932,2933,2933,2968,2932,2932,2932,2932,2932,2932,2968,2968,2968,2932,2932,2932,2933,2933,2968,2932,2932,2932,2932,2932,2932,2968,2968,2968,2932,2932,2932,2933,2933,2968,2932,2932,2932,2932,2932,2932,2968,2968,2968,2932,
+2932,2968,2968,2968,2968,2969,2932,2932,2932,2932,2932,2932,2968,2932,2932,2932,2968,2968,2968,2968,2969,2932,2932,2932,2932,2932,2932,2968,2932,2932,2932,2968,2968,2968,2968,2969,2932,2932,2932,2932,2932,2932,2968,2932,2932,2932,2968,2968,2968,2968,2969,2932,2932,2932,2932,2932,2932,2968,2932,2932,2932,2968,2968,2968,2968,2969,2932,2932,2932,2932,2932,2932,2968,2932,2932,
+2932,2932,2932,2969,2932,2932,2932,2932,2932,2932,2932,2932,2968,2932,2932,2932,2932,2932,2969,2932,2932,2932,2932,2932,2932,2932,2932,2968,2932,2932,2932,2932,2932,2969,2932,2932,2932,2932,2932,2932,2932,2932,2968,2932,2932,2932,2932,2932,2969,2932,2932,2932,2932,2932,2932,2932,2932,2968,2932,2932,2932,2932,2932,2969,2932,2932,2932,2932,2932,2932,2932,2932,2968,2932,2932,
+2932,2969,2969,2932,2932,2932,2932,2932,2932,2932,2968,2932,2933,2932,2932,2932,2969,2969,2932,2932,2932,2932,2932,2932,2932,2968,2932,2933,2932,2932,2932,2969,2969,2932,2932,2932,2932,2932,2932,2932,2968,2932,2933,2932,2932,2932,2969,2969,2932,2932,2932,2932,2932,2932,2932,2968,2932,2933,2932,2932,2932,2969,2969,2932,2932,2932,2932,2932,2932,2932,2968,2932,2933,2932,2932,
+2969,2969,2932,2932,2968,2932,2932,2932,2932,2932,2932,2932,2933,2932,2932,2969,2969,2932,2932,2968,2932,2932,2932,2932,2932,2932,2932,2933,2932,2932,2969,2969,2932,2932,2968,2932,2932,2932,2932,2932,2932,2932,2933,2932,2932,2969,2969,2932,2932,2968,2932,2932,2932,2932,2932,2932,2932,2933,2932,2932,2969,2969,2932,2932,2968,2932,2932,2932,2932,2932,2932,2932,2933,2932,2932,
+2969,2969,2933,2932,2932,2932,2932,2932,2932,2932,2968,2968,2933,2932,2932,2969,2969,2933,2932,2932,2932,2932,2932,2932,2932,2968,2968,2933,2932,2932,2969,2969,2933,2932,2932,2932,2932,2932,2932,2932,2968,2968,2933,2932,2932,2969,2969,2933,2932,2932,2932,2932,2932,2932,2932,2968,2968,2933,2932,2932,2969,2969,2933,2932,2932,2932,2932,2932,2932,2932,2968,2968,2933,2932,2932,
+2932,2969,2969,2932,2932,2932,2932,2932,2932,2932,2968,2968,2968,2932,2932,2932,2969,2969,2932,2932,2932,2932,2932,2932,2932,2968,2968,2968,2932,2932,2932,2969,2969,2932,2932,2932,2932,2932,2932,2932,2968,2968,2968,2932,2932,2932,2969,2969,2932,2932,2932,2932,2932,2932,2932,2968,2968,2968,2932,2932,2932,2969,2969,2932,2932,2932,2932,2932,2932,2932,2968,2968,2968,2932,2932,
+2932,2932,2969,2932,2932,2932,2932,2932,2932,2932,2932,2968,2968,2932,2932,2932,2932,2969,2932,2932,2932,2932,2932,2932,2932,2932,2968,2968,2932,2932,2932,2932,2969,2932,2932,2932,2932,2932,2932,2932,2932,2968,2968,2932,2932,2932,2932,2969,2932,2932,2932,2932,2932,2932,2932,2932,2968,2968,2932,2932,2932,2932,2969,2932,2932,2932,2932,2932,2932,2932,2932,2968,2968,2932,2932,
+2932,2933,2968,2969,2969,2932,2932,2932,2932,2933,2932,2968,2933,2932,2932,2932,2933,2968,2969,2969,2932,2932,2932,2932,2933,2932,2968,2933,2932,2932,2932,2933,2968,2969,2969,2932,2932,2932,2932,2933,2932,2968,2933,2932,2932,2932,2933,2968,2969,2969,2932,2932,2932,2932,2933,2932,2968,2933,2932,2932,2932,2933,2968,2969,2969,2932,2932,2932,2932,2933,2932,2968,2933,2932,2932,
+2933,2933,2968,2968,2968,2969,2932,2932,2932,2933,2932,2968,2932,2932,2932,2933,2933,2968,2968,2968,2969,2932,2932,2932,2933,2932,2968,2932,2932,2932,2933,2933,2968,2968,2968,2969,2932,2932,2932,2933,2932,2968,2932,2932,2932,2933,2933,2968,2968,2968,2969,2932,2932,2932,2933,2932,2968,2932,2932,2932,2933,2933,2968,2968,2968,2969,2932,2932,2932,2933,2932,2968,2932,2932,2932,
+2933,2933,2968,2968,2932,2932,2932,2932,2932,2933,2932,2968,2932,2932,2932,2933,2933,2968,2968,2932,2932,2932,2932,2932,2933,2932,2968,2932,2932,2932,2933,2933,2968,2968,2932,2932,2932,2932,2932,2933,2932,2968,2932,2932,2932,2933,2933,2968,2968,2932,2932,2932,2932,2932,2933,2932,2968,2932,2932,2932,2933,2933,2968,2968,2932,2932,2932,2932,2932,2933,2932,2968,2932,2932,2932,
+2932,2968,2968,2933,2933,2933,2969,2932,2932,2969,2932,2968,2932,2932,2932,2932,2968,2968,2933,2933,2933,2969,2932,2932,2969,2932,2968,2932,2932,2932,2932,2968,2968,2933,2933,2933,2969,2932,2932,2969,2932,2968,2932,2932,2932,2932,2968,2968,2933,2933,2933,2969,2932,2932,2969,2932,2968,2932,2932,2932,2932,2968,2968,2933,2933,2933,2969,2932,2932,2969,2932,2968,2932,2932,2932,
+2932,2968,2968,2933,2933,2933,2932,2932,2932,2968,2932,2932,2932,2932,2932,2932,2968,2968,2933,2933,2933,2932,2932,2932,2968,2932,2932,2932,2932,2932,2932,2968,2968,2933,2933,2933,2932,2932,2932,2968,2932,2932,2932,2932,2932,2932,2968,2968,2933,2933,2933,2932,2932,2932,2968,2932,2932,2932,2932,2932,2932,2968,2968,2933,2933,2933,2932,2932,2932,2968,2932,2932,2932,2932,2932,
+2932,2968,2968,2968,2968,2968,2969,2932,2932,2932,2932,2968,2968,2968,2968,2932,2968,2968,2968,2968,2968,2932,2932,2932,2932,2932,2968,2968,2968,2968,2932,2968,2968,2968,2968,2968,2969,2932,2932,2932,2932,2968,2968,2968,2968,2932,2968,2968,2968,2968,2968,2969,2932,2932,2932,2932,2968,2968,2968,2968,2932,2968,2968,2968,2968,2968,2969,2932,2932,2932,2932,2968,2968,2968,2968,
+2932,2968,2968,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2968,2968,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2968,2968,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2968,2968,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2968,2968,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,2932,
+0,0,2968,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2932,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <layer id="10" name="layer1" width="75" height="19" tintcolor="#676767">
+   <data encoding="csv">
+0,0,0,0,0,0,0,2960,2961,0,0,0,0,0,0,0,0,0,0,0,0,0,2960,2961,0,0,0,0,0,0,0,0,0,0,0,0,0,2960,2961,0,0,0,0,0,0,0,0,0,0,0,0,0,2960,2961,0,0,0,0,0,0,0,0,0,0,0,0,0,2960,2961,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,3063,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+0,3063,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,3063,0,0,0,0,0,2962,2963,0,0,0,0,3061,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,3062,0,0,0,0,0,0,0,0,0,0,3063,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,3061,0,0,0,0,0,0,0,0,0,3063,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,3063,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,3064,0,0,
+0,0,3064,0,0,0,0,2962,2963,0,0,0,3064,0,3057,0,0,0,0,0,0,0,2962,2963,0,0,3061,0,0,0,0,0,3061,0,0,0,0,2962,2963,0,0,0,0,3062,0,0,3064,0,3061,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+0,0,0,0,3063,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,3063,3063,0,2962,2963,0,0,0,0,0,0,0,0,0,0,3057,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,3064,0,0,3063,0,0,0,0,2962,2963,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2962,2963,3063,0,0,0,0,3051,0,0,0,0,0,0,0,2962,2963,0,0,0,0,3057,3057,0,0,3064,3064,0,0,0,2962,2963,0,3061,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+0,0,3050,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,3063,0,0,0,0,0,2962,2963,0,0,0,0,0,0,3061,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,3064,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2962,2963,0,0,3057,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,3063,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,3061,0,3048,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,3064,0,0,0,0,2962,2963,0,0,0,3064,0,0,
+0,0,0,3063,0,0,0,2962,2963,0,0,0,0,3063,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,3051,0,0,0,0,0,0,2962,2963,0,0,0,3057,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,3051,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+3057,0,3063,3063,0,0,0,2962,2963,0,0,0,0,0,0,0,0,3064,0,0,0,0,2962,2963,0,0,0,3057,0,0,0,0,0,0,3062,0,0,2962,2963,0,0,0,0,3057,3057,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2962,2963,0,3063,0,3057,0,0,3051,0,3063,0,0,0,0,2962,2963,0,0,3063,0,3064,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,3064,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,3063,0,0,2962,2963,0,0,0,0,0,0,
+3051,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,3048,0,0,0,0,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,3051,0,0,0,0,0,0,2962,2963,0,0,0,0,0,0,0,3064,0,0,0,0,0,2962,2963,0,0,0,0,0,0,
+3051,3051,0,0,0,0,0,2964,2965,0,0,0,0,0,0,0,0,0,0,0,0,0,2964,2965,0,0,0,0,0,3061,0,0,0,0,0,0,0,2964,2965,0,0,0,0,0,3057,0,0,0,0,0,0,0,2964,2965,0,0,0,0,0,0,0,0,0,0,0,0,0,2964,2965,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+  </layer>
+ </group>
+ <layer id="1" name="ChaoSolido" width="75" height="19">
+  <properties>
+   <property name="collides" type="bool" value="true"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2977,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,2973,
+2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931,2931
+</data>
+ </layer>
+ <layer id="15" name="Detalhes" width="75" height="19">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2976,2977,2978,2979,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2972,2973,2974,2975,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2976,2977,2978,2979,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2972,2973,2974,2975,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2972,2973,2974,2975,0,0,0,0,2290,2291,2292,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2306,2307,2308,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2322,2323,2324,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>
